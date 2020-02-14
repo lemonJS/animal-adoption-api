@@ -1,0 +1,19 @@
+{
+  "name": "animal-adoption-api",
+  "version": "1.0.0",
+  "description": "Who's a good boy?!",
+  "main": "handler.js",
+  "repository": "git@github.com:lemonJS/animal-adoption-api.git",
+  "author": "Lewis Monteith <lewismonteith@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "axios": "^0.19.2"
+  },
+  "devDependencies": {
+    "jest": "^25.1.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
