@@ -3,9 +3,10 @@
 const axios = require('axios');
 const config = require('../config');
 
-module.exports = class Animals {
+class Animals {
   /**
    * List of available animal types
+   *
    * @public
    * @returns {string[]} A list of types
    */
@@ -15,9 +16,10 @@ module.exports = class Animals {
 
   /**
    * Get a list of animals for a given type
+   *
    * @public
    * @param {enum} type One of the valid animal types
-   * @returns {array} An array of animals
+   * @returns {Promise<array>} An array of animals
    */
   static async get(type) {
     if (!Animals.types.includes(type)) {
@@ -33,3 +35,5 @@ module.exports = class Animals {
     }
   }
 }
+
+module.exports = Animals;

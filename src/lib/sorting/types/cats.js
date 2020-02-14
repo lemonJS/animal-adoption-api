@@ -2,8 +2,10 @@
 
 const Base = require('../base');
 
-module.exports = class Cats extends Base {
+class Cats extends Base {
   /**
+   * Omit By Colors
+   *
    * Return a new array of animals where groups
    * with matching colors are removed
    * @private
@@ -47,3 +49,5 @@ module.exports = class Cats extends Base {
     ];
   }
 }
+
+module.exports = Cats;

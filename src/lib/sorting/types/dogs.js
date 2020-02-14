@@ -2,7 +2,7 @@
 
 const Base = require('../base');
 
-module.exports = class Dogs extends Base {
+class Dogs extends Base {
   /**
    * Requirements:
    * - Dogs should be sorted by age (descending).
@@ -11,3 +11,5 @@ module.exports = class Dogs extends Base {
     return this.sortByAge('desc');
   }
 }
+
+module.exports = Dogs;
