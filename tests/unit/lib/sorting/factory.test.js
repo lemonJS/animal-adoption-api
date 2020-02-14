@@ -9,24 +9,24 @@ describe('Factory', () => {
   test('should respond to cats', () => {
     const type = 'cats';
 
-    expect(factory.create(type)).toBeInstanceOf(Cats);
+    expect(Factory.create(type)).toBeInstanceOf(Cats);
   });
 
   test('should response to dogs', () => {
     const type = 'dogs';
 
-    expect(factory.create(type)).toBeInstanceOf(Dogs);
+    expect(Factory.create(type)).toBeInstanceOf(Dogs);
   });
 
   test('should response to hamsters', () => {
     const type = 'hamsters';
 
-    expect(factory.create(type)).toBeInstanceOf(Hamsters);
+    expect(Factory.create(type)).toBeInstanceOf(Hamsters);
   });
 
   test('should error if the type is not known', () => {
     const invalidType = 'teapot';
 
-    expect(() => factory.create(invalidType)).toThrow(`${invalidType} is not implimented`);
+    expect(() => Factory.create(invalidType)).toThrow(`${invalidType} is not implimented`);
   });
 });

@@ -1,27 +1,23 @@
 'use strict';
 
-/**
- * This is an abstract class designed to be
- * extended by animal types from ./types/*
- * @abstract
- */
 class Base {
   constructor(animals) {
     this.animals = animals;
   }
 
-  /**
-   * Sort the animals by age
-   * @private
-   * @param {'asc' | 'desc'} direction Whether to sort ascending or descending
-   * @param {*} animals Optional argument of animals
-   * @returns {array} The sorted list of animals
-   */
+  getAge(dateOfBirth) {
+    const date = new Date(dateOfBirth);
+    return date.valueOf();
+  }
+
   sortByAge(direction, animals=this.animals) {
     return animals.sort((a, b) => {
+      const dateA = this.getAge(a.dateOfBirth);
+      const dateB = this.getAge(b.dateOfBirth);
+
       return direction === 'asc'
-        ? a > b
-        : a < b;
+        ? dateB - dateA
+        : dateA - dateB;
     });
   }
 }

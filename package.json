@@ -8,10 +8,12 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "axios": "^0.19.2"
+    "axios": "^0.19.2",
+    "moment": "^2.24.0"
   },
   "devDependencies": {
-    "jest": "^25.1.0"
+    "jest": "^25.1.0",
+    "serverless-domain-manager": "^3.3.1"
   },
   "scripts": {
     "test": "jest"
