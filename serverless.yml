@@ -45,8 +45,8 @@ provider:
 #            - "/*"
 
 # you can define service wide environment variables here
-#  environment:
-#    variable1: value1
+ environment:
+   BASE_API_URL: https://apigateway.test.lifeworks.com/rescue-shelter-api
 
 # you can add packaging information here
 #package:
