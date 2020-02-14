@@ -4,8 +4,6 @@ const Base = require('../base');
 
 class Cats extends Base {
   /**
-   * Omit By Colors
-   *
    * Return a new array of animals where groups
    * with matching colors are removed
    * @private
@@ -29,6 +27,9 @@ class Cats extends Base {
    * - Cats should be grouped by colour. Ginger cats should appear first,
    *   followed black cats, followed by any other colours.
    * - Each group of cats should be sorted by age (descending).
+   *
+   * @public
+   * @returns {any[]} The sorted animals
    */
   sort() {
     const groups = this.animals.reduce((acc, animal) => {

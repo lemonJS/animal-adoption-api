@@ -8,6 +8,12 @@ class Handler {
     this.event = event;
   }
 
+  /**
+   * Get a list of sorted animals by type
+   * @private
+   * @param {emum} type One of the animal types
+   * @returns {Promise<array>} The sorted list of animals
+   */
   async getSortedAnimal(type) {
     const animals = await Animals.get(type);
     const factory = SortingFactory.create(type, animals);
@@ -15,6 +21,11 @@ class Handler {
     return factory.sort();
   }
 
+  /**
+   * Get all the available animals that are up for adoption
+   * @private
+   * @returns {Promise<array>} The combined list of all animals
+   */
   async getAnimals() {
     const response = Animals.types.map(this.getSortedAnimal);
     const animals = await Promise.all(response);
@@ -23,6 +34,11 @@ class Handler {
     return animals.reduce((acc, animal) => [...acc, ...animal], []);
   }
 
+  /**
+   * Handle failure
+   * @private
+   * @returns {*} A failure response
+   */
   handleFailure() {
     return {
       statusCode: 500,
@@ -30,6 +46,12 @@ class Handler {
     };
   }
 
+  /**
+   * Handle success
+   * @private
+   * @param {array} animals The list of processed animals
+   * @returns {*} A success response
+   */
   handleSuccess(animals) {
     return {
       statusCode: 200,
@@ -37,9 +59,15 @@ class Handler {
     };
   }
 
+  /**
+   * The lambda handler function
+   * @public
+   * @static
+   * @param {*} event Lambda event
+   * @returns {Promise<any>} The lambda response
+   */
   static async process(event) {
     const handler = new Handler(event);
-
     const animals = await handler.getAnimals();
 
     // If all of the results fail then return a 500,

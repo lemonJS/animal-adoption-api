@@ -6,9 +6,9 @@ const Hamsters = require('./types/hamsters');
 
 class Factory {
   /**
-   * Sorting Factory
-   *
+   * Return a new animal type from the factory
    * @public
+   * @static
    * @param {enum} type One of the animal types
    * @param {array} animals A list of unsorted animals
    * @returns {array} The list of sorted animals

@@ -6,8 +6,8 @@ const config = require('../config');
 class Animals {
   /**
    * List of available animal types
-   *
    * @public
+   * @static
    * @returns {string[]} A list of types
    */
   static get types() {
@@ -16,8 +16,8 @@ class Animals {
 
   /**
    * Get a list of animals for a given type
-   *
    * @public
+   * @static
    * @param {enum} type One of the valid animal types
    * @returns {Promise<array>} An array of animals
    */

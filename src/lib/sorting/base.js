@@ -12,7 +12,7 @@ class Base {
 
   /**
    * Sort the animals by age
-   *
+   * @private
    * @param {'asc' | 'desc'} direction Whether to sort ascending or descending
    * @param {*} animals Optional argument of animals
    * @returns {array} The sorted list of animals
