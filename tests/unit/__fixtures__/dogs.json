@@ -1,0 +1,42 @@
+[
+  {
+    "forename": "Nicky",
+    "surname": "Stephanos",
+    "dateOfBirth": "2013-03-24",
+    "image": {
+      "url": "https://dog.ceo/api/img/brabancon/n02112706_1072.jpg"
+    }
+  },
+  {
+    "forename": "Violet",
+    "surname": "Chomsky",
+    "dateOfBirth": "2006-05-29",
+    "image": {
+      "url": "https://dog.ceo/api/img/retriever-golden/n02099601_2536.jpg"
+    }
+  },
+  {
+    "forename": "Hugo",
+    "surname": "Matteau",
+    "dateOfBirth": "2008-08-24",
+    "image": {
+      "url": "https://dog.ceo/api/img/clumber/n02101556_3690.jpg"
+    }
+  },
+  {
+    "forename": "Patches",
+    "surname": "Sanchez",
+    "dateOfBirth": "2007-03-16",
+    "image": {
+      "url": "https://dog.ceo/api/img/setter-english/n02100735_216.jpg"
+    }
+  },
+  {
+    "forename": "Diana",
+    "surname": "Ionita",
+    "dateOfBirth": "2012-06-01",
+    "image": {
+      "url": "https://dog.ceo/api/img/terrier-australian/n02096294_4440.jpg"
+    }
+  }
+]
