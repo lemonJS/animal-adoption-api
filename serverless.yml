@@ -34,6 +34,6 @@ custom:
 
 functions:
   animals:
-    handler: handler.animals
+    handler: src/handler.animals
     events:
       - http: GET animals

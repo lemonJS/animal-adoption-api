@@ -1,8 +1,8 @@
 'use strict';
 
-const Animals = require('./src/lib/animals');
-const Formatting = require('./src/lib/formatting');
-const SortingFactory = require('./src/lib/sorting/factory');
+const Animals = require('./lib/animals');
+const Formatting = require('./lib/formatting');
+const SortingFactory = require('./lib/sorting/factory');
 
 class Handler {
   constructor(event) {
