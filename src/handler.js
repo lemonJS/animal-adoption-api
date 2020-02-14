@@ -5,10 +5,6 @@ const Formatting = require('./lib/formatting');
 const SortingFactory = require('./lib/sorting/factory');
 
 class Handler {
-  constructor(event) {
-    this.event = event;
-  }
-
   async getProcessedAnimal(type) {
     const animals = await Animals.get(type);
     const factory = SortingFactory.create(type, animals);
@@ -40,8 +36,8 @@ class Handler {
     };
   }
 
-  static async process(event) {
-    const handler = new Handler(event);
+  static async process() {
+    const handler = new Handler();
     const animals = await handler.getAnimals();
 
     // If all of the results fail then return a 500,

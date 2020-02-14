@@ -24,7 +24,7 @@ describe('Animals', () => {
 
     describe('when the provided type is valid', () => {
       const type = 'cats';
-      const fakeResponse = ['animal_1', 'animal_2'];
+      const fakeResponse = { body: ['animal_1', 'animal_2'] };
 
       beforeEach(() => {
         axios.get = jest.fn(async () => ({
@@ -41,7 +41,7 @@ describe('Animals', () => {
       test('should return the data', async () => {
         const response = await Animals.get(type);
 
-        expect(response).toEqual(fakeResponse);
+        expect(response).toEqual(fakeResponse.body);
       });
 
       describe('when the upstream api is not responding', () => {
