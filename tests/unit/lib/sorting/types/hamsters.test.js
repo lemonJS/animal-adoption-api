@@ -10,4 +10,18 @@ describe('Hamsters', () => {
     expect(hamsters).toBeInstanceOf(Hamsters);
     expect(hamsters.animals).toEqual(fakeAnimals);
   });
+
+  describe('.sort', () => {
+    const hamsters = new Hamsters([]);
+
+    beforeEach(() => {
+      hamsters.sortByAge = jest.fn();
+    });
+
+    test('should sort by ascending date', () => {
+      hamsters.sort();
+
+      expect(hamsters.sortByAge).toHaveBeenCalledWith('asc');
+    });
+  });
 });
