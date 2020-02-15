@@ -5,15 +5,15 @@ const Formatting = require('../../../src/lib/formatting');
 const fixtures = [
   {
     type: 'cats',
-    fixture: require('../__fixtures__/cats.json')
+    fixture: require('../../__fixtures__/cats.json')
   },
   {
     type: 'dogs',
-    fixture: require('../__fixtures__/dogs.json')
+    fixture: require('../../__fixtures__/dogs.json')
   },
   {
     type: 'hamsters',
-    fixture: require('../__fixtures__/hamsters.json')
+    fixture: require('../../__fixtures__/hamsters.json')
   }
 ];
 

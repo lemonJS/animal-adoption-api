@@ -1,0 +1,167 @@
+[
+  {
+    "type": "dogs",
+    "fullName": "Violet Chomsky",
+    "image": {
+      "url": "https://dog.ceo/api/img/retriever-golden/n02099601_2536.jpg"
+    },
+    "age": {
+      "years": 13,
+      "months": 8
+    }
+  },
+  {
+    "type": "dogs",
+    "fullName": "Patches Sanchez",
+    "image": {
+      "url": "https://dog.ceo/api/img/setter-english/n02100735_216.jpg"
+    },
+    "age": {
+      "years": 12,
+      "months": 11
+    }
+  },
+  {
+    "type": "dogs",
+    "fullName": "Hugo Matteau",
+    "image": {
+      "url": "https://dog.ceo/api/img/clumber/n02101556_3690.jpg"
+    },
+    "age": {
+      "years": 11,
+      "months": 5
+    }
+  },
+  {
+    "type": "dogs",
+    "fullName": "Diana Ionita",
+    "image": {
+      "url": "https://dog.ceo/api/img/terrier-australian/n02096294_4440.jpg"
+    },
+    "age": {
+      "years": 7,
+      "months": 8
+    }
+  },
+  {
+    "type": "dogs",
+    "fullName": "Nicky Stephanos",
+    "image": {
+      "url": "https://dog.ceo/api/img/brabancon/n02112706_1072.jpg"
+    },
+    "age": {
+      "years": 6,
+      "months": 10
+    }
+  },
+  {
+    "type": "cats",
+    "fullName": "Gary Neville",
+    "image": {
+      "url": "http://farm2.static.flickr.com/1316/5110427851_3e1ca3de4a.jpg"
+    },
+    "age": {
+      "years": 12,
+      "months": 4
+    }
+  },
+  {
+    "type": "cats",
+    "fullName": "Omar Rodriguez",
+    "image": {
+      "url": "http://www.great-pictures-of-cats.com/image-files/cat-pics-1.jpg"
+    },
+    "age": {
+      "years": 8,
+      "months": 7
+    }
+  },
+  {
+    "type": "cats",
+    "fullName": "Sherri Baldwin",
+    "image": {
+      "url": "https://i.pinimg.com/736x/c4/56/22/c45622f45134a5128dc66d9018ef49e5--cat-things-funny-things.jpg"
+    },
+    "age": {
+      "years": 3,
+      "months": 0
+    }
+  },
+  {
+    "type": "cats",
+    "fullName": "Larry David",
+    "image": {
+      "url": "http://25.media.tumblr.com/tumblr_lpujhsofGQ1qdvbl3o1_1280.jpg"
+    },
+    "age": {
+      "years": 12,
+      "months": 1
+    }
+  },
+  {
+    "type": "cats",
+    "fullName": "Dixie Mason",
+    "image": {
+      "url": "http://25.media.tumblr.com/tumblr_m3qf8sQXfQ1qhwmnpo1_1280.jpg"
+    },
+    "age": {
+      "years": 11,
+      "months": 0
+    }
+  },
+  {
+    "type": "cats",
+    "fullName": "Lucy Morales",
+    "image": {
+      "url": "https://i.pinimg.com/736x/01/59/c3/0159c31c438de4bf00f23960390a68f6--animal-wallpaper-hd-wallpaper.jpg"
+    },
+    "age": {
+      "years": 9,
+      "months": 10
+    }
+  },
+  {
+    "type": "cats",
+    "fullName": "Pedro Sanchez",
+    "image": {
+      "url": "http://www.catster.com/wp-content/uploads/2014/08/An-albino-cat.jpg"
+    },
+    "age": {
+      "years": 8,
+      "months": 4
+    }
+  },
+  {
+    "type": "hamsters",
+    "fullName": "Gwendolyn Roy",
+    "image": {
+      "url": "https://i.ytimg.com/vi/xkxjNZComZg/maxresdefault.jpg"
+    },
+    "age": {
+      "years": 3,
+      "months": 8
+    }
+  },
+  {
+    "type": "hamsters",
+    "fullName": "Felix Hamilton",
+    "image": {
+      "url": "https://blueprint-api-production.s3.amazonaws.com/uploads/story/thumbnail/51167/5ee9a826-a4f5-4301-9068-1a4f6eb6fbed.jpg"
+    },
+    "age": {
+      "years": 4,
+      "months": 10
+    }
+  },
+  {
+    "type": "hamsters",
+    "fullName": "Lorenzo Parsons",
+    "image": {
+      "url": "https://www.peta.org/wp-content/uploads/2016/09/hamster-602x401.jpg"
+    },
+    "age": {
+      "years": 5,
+      "months": 5
+    }
+  }
+]

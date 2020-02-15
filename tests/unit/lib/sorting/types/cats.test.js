@@ -1,7 +1,7 @@
 'use strict';
 
 const Cats = require('../../../../../src/lib/sorting/types/cats');
-const fixture = require('../../../__fixtures__/cats.json');
+const fixture = require('../../../../__fixtures__/cats.json');
 
 describe('Cats', () => {
   test('should instantiate with a list of animals', () => {
