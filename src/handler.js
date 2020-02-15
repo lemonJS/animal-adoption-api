@@ -15,7 +15,7 @@ class Handler {
   }
 
   async getAnimals() {
-    const response = Animals.types.map(this.getProcessedAnimal);
+    const response = Animals.types.map(type => this.getProcessedAnimal(type));
     const animals = await Promise.all(response);
 
     // Flatten the list of promise results;
@@ -48,4 +48,7 @@ class Handler {
   }
 }
 
-module.exports.animals = Handler.process;
+module.exports = {
+  Handler,
+  animals: Handler.process
+};
