@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = {
-  baseApiUri: process.env.base_api_url
+  baseApiUri: process.env.BASE_API_URL
 };

@@ -19,9 +19,6 @@ provider:
   stage: dev
   region: eu-west-1
 
-environment:
-  base_api_url: ${ssm:api_url}
-
 plugins:
   - serverless-domain-manager
 
@@ -35,5 +32,7 @@ custom:
 functions:
   animals:
     handler: src/handler.animals
+    environment:
+      BASE_API_URL: ${ssm:api_url}
     events:
       - http: GET animals
