@@ -20,7 +20,7 @@ provider:
   region: eu-west-1
 
 environment:
-  base_api_url: ${ssm:lifeworks_api_url}
+  base_api_url: ${ssm:api_url}
 
 plugins:
   - serverless-domain-manager
